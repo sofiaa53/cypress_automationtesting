@@ -1,0 +1,22 @@
+{
+  "name": "cypress_automationtesting",
+  "version": "1.0.0",
+  "description": "Cypress UI Automation",
+  "main": "cypress.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sofiaa53/cypress_automationtesting.git"
+  },
+  "author": "Sofia Awiliyah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sofiaa53/cypress_automationtesting/issues"
+  },
+  "homepage": "https://github.com/sofiaa53/cypress_automationtesting#readme",
+  "dependencies": {
+    "cypress": "^12.17.4"
+  }
+}
