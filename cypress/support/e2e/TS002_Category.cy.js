@@ -28,6 +28,8 @@ describe('Create New Category', () => {
         category.addCategory()
         addNewCategory.inputCategoryName(data.category.category_name)
         addNewCategory.inputCategoryDescription(data.category.category_description)
+        addNewCategory.saveCategory()
+        addNewCategory.validateSuccessMessage(data.successMessage)
     })
 
     it('User add new category without fill description', () => {
@@ -36,6 +38,8 @@ describe('Create New Category', () => {
         dasboard.clickBtnCategory()
         category.addCategory()
         addNewCategory.inputCategoryName(data.category.category_name)
+        addNewCategory.saveCategory()
+        addNewCategory.validateSuccessMessage(data.successMessage)
     })
 
     it('User add new category without fill name', () => {
@@ -44,6 +48,8 @@ describe('Create New Category', () => {
         dasboard.clickBtnCategory()
         category.addCategory()
         addNewCategory.inputCategoryDescription(data.category.category_description)
+        addNewCategory.saveCategory()
+        addNewCategory.validateAlertEmpty("\"name\" " +data.emptyAlert)
     })
 
     

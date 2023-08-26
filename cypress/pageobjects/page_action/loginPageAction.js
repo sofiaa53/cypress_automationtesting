@@ -29,5 +29,9 @@ export default class loginPageAction {
         cy.contains(alertLogin)
     }
 
+    successMessage(loginSuccess) {
+        cy.contains(loginSuccess)
+    }
+
 
 }

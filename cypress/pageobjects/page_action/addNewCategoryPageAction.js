@@ -18,4 +18,12 @@ export default class addNewCategoryPageAction {
     saveCategory() {
         add_category_element.btnSave().click()
     }
+
+    validateSuccessMessage(successMessage) {
+        cy.contains(successMessage)
+    }
+
+    validateAlertEmpty(emptyAlert) {
+        cy.contains(emptyAlert)
+    }
 }

@@ -18,6 +18,7 @@ describe('User Login', () => {
     it('User Login Successfully', () => {
         lgnPage.inputEmailPassword(data.validCredential.user_email, data.validCredential.user_password)
         lgnPage.clickLoginButton()
+        lgnPage.successMessage(data.loginSuccess)
     })
 
     it('User Login Failed', () => {

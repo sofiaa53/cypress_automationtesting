@@ -23,4 +23,12 @@ export default class addNewUserPageAction {
     saveUser() {
         add_user_element.btnSave().click()
     }
+
+    validateSuccessMessage(successMessage) {
+        cy.contains(successMessage)
+    }
+
+    validateAlertEmpty(emptyAlert) {
+        cy.contains(emptyAlert)
+    }
 }

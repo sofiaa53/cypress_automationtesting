@@ -20,5 +20,8 @@
         "new_user_password": "qwerty123@"
     }, 
 
-    "alertLogin": "Kredensial yang Anda berikan salah"
+    "alertLogin": "Kredensial yang Anda berikan salah",
+    "loginSuccess":"kasirAja",
+    "successMessage" : "success",
+    "emptyAlert" :"is not allowed to be empty"
 }

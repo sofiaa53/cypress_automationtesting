@@ -29,6 +29,8 @@ describe('Create New User', () => {
         add_new_user.inputUserName(data.user.new_user_name)
         add_new_user.inputUserEmail(data.user.new_user_email)
         add_new_user.inputUserPassword(data.user.new_user_password)
+        add_new_user.saveUser()
+        add_new_user.validateSuccessMessage(data.successMessage)
     })
 
     it('User add new user without fill name', () => {
@@ -38,6 +40,8 @@ describe('Create New User', () => {
         user.addUser()
         add_new_user.inputUserEmail(data.user.new_user_email)
         add_new_user.inputUserPassword(data.user.new_user_password)
+        add_new_user.saveUser()
+        add_new_user.validateAlertEmpty("\"name\" " +data.emptyAlert)
     })
 
     it('User add new user without fill email', () => {
@@ -47,6 +51,8 @@ describe('Create New User', () => {
         user.addUser()
         add_new_user.inputUserName(data.user.new_user_name)
         add_new_user.inputUserPassword(data.user.new_user_password)
+        add_new_user.saveUser()
+        add_new_user.validateAlertEmpty("\"email\" " +data.emptyAlert)
     })
 
     it('User add new user without fill password', () => {
@@ -56,6 +62,8 @@ describe('Create New User', () => {
         user.addUser()
         add_new_user.inputUserName(data.user.new_user_name)
         add_new_user.inputUserEmail(data.user.new_user_email)
+        add_new_user.saveUser()
+        add_new_user.validateAlertEmpty("\"password\" " +data.emptyAlert)
     })
     
 })

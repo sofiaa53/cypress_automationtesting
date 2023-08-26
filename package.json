@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/sofiaa53/cypress_automationtesting#readme",
   "dependencies": {
-    "cypress": "^12.17.4"
+    "cypress": "^12.17.4",
+    "mochawesome": "^7.1.3"
   }
 }
